@@ -1,170 +1,3 @@
-const questionsJsvsScript = [
-  {
-    id: 1,
-    question: "Какой метод добавляет новый элемент в конец массива?",
-    options: [
-      "array.push()",
-      "array.pop()",
-      "array.shift()",
-      "array.unshift()"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 2,
-    question: "Что выведет console.log(typeof NaN)?",
-    options: [
-      "'number'",
-      "'string'",
-      "'undefined'",
-      "'NaN'"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 3,
-    question: "Какой оператор проверяет равенство и по значению, и по типу?",
-    options: [
-      "==",
-      "===",
-      "=",
-      "!=="
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 4,
-    question: "Что такое замыкание (closure) в JavaScript?",
-    options: [
-      "Способ скрыть переменные от внешнего мира",
-      "Функция, которая запоминает свое лексическое окружение",
-      "Специальный тип объекта",
-      "Синтаксис для создания классов"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 5,
-    question: "Какой метод преобразует JSON-строку в JavaScript-объект?",
-    options: [
-      "JSON.parse()",
-      "JSON.stringify()",
-      "JSON.toObject()",
-      "JSON.fromString()"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 6,
-    question: "Что делает оператор 'use strict'?",
-    options: [
-      "Включает строгий режим выполнения кода",
-      "Объявляет переменную как константу",
-      "Запрещает использование этого файла",
-      "Указывает на строгую типизацию"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 7,
-    question: "Какой метод создает новый массив на основе существующего?",
-    options: [
-      "array.slice()",
-      "array.splice()",
-      "array.split()",
-      "array.join()"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 8,
-    question: "Что такое hoisting в JavaScript?",
-    options: [
-      "Поднятие переменных и функций в начало области видимости",
-      "Специальный тип анимации",
-      "Метод оптимизации кода",
-      "Способ объявления классов"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 9,
-    question: "Какой метод используется для обработки промисов?",
-    options: [
-      ".then()",
-      ".catch()",
-      ".finally()",
-      "Все перечисленные"
-    ],
-    correctAnswer: 3
-  },
-  {
-    id: 10,
-    question: "Что такое IIFE?",
-    options: [
-      "Немедленно вызываемое функциональное выражение",
-      "Специальный тип импорта",
-      "Метод итерации по массиву",
-      "Синтаксис стрелочных функций"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 11,
-    question: "Какой метод преобразует массив в строку?",
-    options: [
-      "array.toString()",
-      "array.join()",
-      "Оба варианта верны",
-      "Такого метода нет"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 12,
-    question: "Что делает метод Object.keys()?",
-    options: [
-      "Возвращает массив свойств объекта",
-      "Блокирует изменение объекта",
-      "Создает копию объекта",
-      "Преобразует объект в массив"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 13,
-    question: "Как объявить класс в ES6?",
-    options: [
-      "class MyClass {}",
-      "function MyClass() {}",
-      "object.create(MyClass)",
-      "new Class {}"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 14,
-    question: "Что такое деструктуризация?",
-    options: [
-      "Извлечение данных из массивов или объектов",
-      "Удаление свойств объекта",
-      "Разрушение структуры программы",
-      "Специальный тип комментариев"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 15,
-    question: "Какой метод выполняет функцию для каждого элемента массива?",
-    options: [
-      "array.forEach()",
-      "array.map()",
-      "array.filter()",
-      "Все перечисленные"
-    ],
-    correctAnswer: 3
-  }
-];
 const questionsHTML = [
   {
     id: 1,
@@ -179,159 +12,105 @@ const questionsHTML = [
   },
   {
     id: 2,
-    question: "Какой тег определяет основное содержимое документа?",
+    question: "Какой атрибут указывает на обязательное поле формы?",
     options: [
-      "&#8249;main&#8250;",
-      "&#8249;body&#8250;",
-      "&#8249;content&#8250;",
-      "&#8249;html&#8250;"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 3,
-    question: "Какой атрибут делает поле ввода обязательным для заполнения?",
-    options: [
-      "required",
       "mandatory",
-      "necessary",
-      "validate"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 4,
-    question: "Какой тег используется для вставки изображения?",
-    options: [
-      "&#8249;img&#8250;",
-      "&#8249;image&#8250;",
-      "&#8249;picture&#8250;",
-      "&#8249;src&#8250;"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 5,
-    question: "Какой тег создает нумерованный список?",
-    options: [
-      "&#8249;ul&#8250;",
-      "&#8249;ol&#8250;",
-      "&#8249;li&#8250;",
-      "&#8249;list&#8250;"
+      "required",
+      "validate",
+      "necessary"
     ],
     correctAnswer: 1
   },
   {
-    id: 6,
-    question: "Какой тег используется для таблицы?",
+    id: 3,
+    question: "Какой тег определяет заголовок документа?",
     options: [
-      "&#8249;table&#8250;",
-      "&#8249;tab&#8250;",
-      "&#8249;grid&#8250;",
-      "&#8249;data&#8250;"
+      "&#8249;h1&#8250;",
+      "&#8249;header&#8250;",
+      "&#8249;title&#8250;",
+      "&#8249;head&#8250;"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 4,
+    question: "Какой тег создает маркированный список?",
+    options: [
+      "&#8249;ol&#8250;",
+      "&#8249;dl&#8250;",
+      "&#8249;ul&#8250;",
+      "&#8249;list&#8250;"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 5,
+    question: "Какой тег используется для вставки изображения?",
+    options: [
+      "&#8249;img&#8250;",
+      "&#8249;picture&#8250;",
+      "&#8249;src&#8250;",
+      "&#8249;image&#8250;"
     ],
     correctAnswer: 0
   },
   {
-    id: 7,
-    question: "Какой тег определяет заголовок документа?",
+    id: 6,
+    question: "Какой тег определяет подвал страницы?",
     options: [
-      "&#8249;head&#8250;",
-      "&#8249;header&#8250;",
-      "&#8249;title&#8250;",
-      "&#8249;h1&#8250;"
+      "&#8249;bottom&#8250;",
+      "&#8249;footer&#8250;",
+      "&#8249;end&#8250;",
+      "&#8249;section&#8250;"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 7,
+    question: "Какой тег используется для ввода пароля?",
+    options: [
+      "&#8249;input type='secret'&#8250;",
+      "&#8249;password&#8250;",
+      "&#8249;input type='password'&#8250;",
+      "&#8249;secret&#8250;"
     ],
     correctAnswer: 2
   },
   {
     id: 8,
-    question: "Какой атрибут указывает альтернативный текст для изображения?",
+    question: "Какой тег создает таблицу?",
     options: [
-      "alt",
-      "title",
-      "description",
-      "src-alt"
+      "&#8249;grid&#8250;",
+      "&#8249;table&#8250;",
+      "&#8249;data&#8250;",
+      "&#8249;tab&#8250;"
     ],
-    correctAnswer: 0
+    correctAnswer: 1
   },
   {
     id: 9,
-    question: "Какой тег создает поле ввода для пароля?",
+    question: "Какой тег используется для семантического выделения навигации?",
     options: [
-      "&#8249;input type='secret'&#8250;",
-      "&#8249;input type='password'&#8250;",
-      "&#8249;password&#8250;",
-      "&#8249;input type='hidden'&#8250;"
+      "&#8249;nav&#8250;",
+      "&#8249;menu&#8250;",
+      "&#8249;links&#8250;",
+      "&#8249;navigation&#8250;"
     ],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     id: 10,
-    question: "Какой тег используется для вставки видео?",
+    question: "Какой тег вставляет горизонтальную линию?",
     options: [
-      "&#8249;media&#8250;",
-      "&#8249;video&#8250;",
-      "&#8249;movie&#8250;",
-      "&#8249;embed&#8250;"
+      "&#8249;line&#8250;",
+      "&#8249;hr&#8250;",
+      "&#8249;divider&#8250;",
+      "&#8249;hl&#8250;"
     ],
     correctAnswer: 1
-  },
-  {
-    id: 11,
-    question: "Какой тег создает выпадающий список?",
-    options: [
-      "&#8249;input type='dropdown'&#8250;",
-      "&#8249;list&#8250;",
-      "&#8249;select&#8250;",
-      "&#8249;option list&#8250;"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 12,
-    question: "Какой тег используется для семантического раздела страницы?",
-    options: [
-      "&#8249;div&#8250;",
-      "&#8249;span&#8250;",
-      "&#8249;section&#8250;",
-      "&#8249;block&#8250;"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 13,
-    question: "Какой атрибут указывает версию HTML?",
-    options: [
-      "version",
-      "doctype",
-      "&#8249;!DOCTYPE&#8250;",
-      "html-version"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 14,
-    question: "Какой тег создает кнопку?",
-    options: [
-      "&#8249;btn&#8250;",
-      "&#8249;button&#8250;",
-      "&#8249;input type='button'&#8250;",
-      "Варианты 2 и 3 верны"
-    ],
-    correctAnswer: 3
-  },
-  {
-    id: 15,
-    question: "Какой тег используется для мета-описания страницы?",
-    options: [
-      "&#8249;meta&#8250;",
-      "&#8249;description&#8250;",
-      "&#8249;info&#8250;",
-      "&#8249;head meta&#8250;"
-    ],
-    correctAnswer: 0
   }
 ];
+
 const cssQuestions = [
   {
     id: 1,
@@ -346,29 +125,7 @@ const cssQuestions = [
   },
   {
     id: 2,
-    question: "Как сделать текст полужирным?",
-    options: [
-      "font-weight: bold;",
-      "font: bold;",
-      "text-style: bold;",
-      "font-size: bold;"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 3,
-    question: "Как подключить внешний CSS файл?",
-    options: [
-      "&#8249;style src='style.css'&#8250;",
-      "&#8249;link rel='stylesheet' href='style.css'&#8250;",
-      "&#8249;css&#8250;style.css&#8249;/css&#8250;",
-      "&#8249;import css='style.css'&#8250;"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 4,
-    question: "Как сделать элемент невидимым, сохраняя его место в потоке?",
+    question: "Как сделать элемент невидимым, но сохраняющим место?",
     options: [
       "display: none;",
       "visibility: hidden;",
@@ -378,124 +135,287 @@ const cssQuestions = [
     correctAnswer: 1
   },
   {
-    id: 5,
-    question: "Что делает свойство position: absolute;?",
+    id: 3,
+    question: "Какое свойство добавляет тень к блоку?",
     options: [
-      "Фиксирует элемент относительно окна браузера",
-      "Позиционирует элемент относительно его нормального положения",
-      "Позиционирует элемент относительно ближайшего позиционированного предка",
-      "Делает элемент абсолютно прозрачным"
+      "shadow",
+      "box-shadow",
+      "block-shadow",
+      "element-shadow"
     ],
-    correctAnswer: 2
+    correctAnswer: 1
+  },
+  {
+    id: 4,
+    question: "Как центрировать элемент по горизонтали с помощью margin?",
+    options: [
+      "margin: center;",
+      "margin: 0 auto;",
+      "margin: auto 0;",
+      "margin-x: auto;"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 5,
+    question: "Как сделать текст жирным?",
+    options: [
+      "font-weight: bold;",
+      "text-style: bold;",
+      "bold: true;",
+      "font: bold;"
+    ],
+    correctAnswer: 0
   },
   {
     id: 6,
-    question: "Как создать гибкий макет с flexbox?",
+    question: "Какое свойство изменяет фон элемента?",
     options: [
-      "display: flexbox;",
-      "display: flex;",
-      "display: inline-flex;",
-      "layout: flex;"
+      "background-color",
+      "bgcolor",
+      "color-background",
+      "element-background"
     ],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     id: 7,
-    question: "Как изменить курсор при наведении?",
+    question: "Как создать гибкий макет (flexbox)?",
     options: [
-      "mouse-pointer: pointer;",
-      "cursor: pointer;",
-      "pointer: hand;",
-      "hover: cursor(pointer);"
+      "display: flex;",
+      "layout: flex;",
+      "flex: true;",
+      "display: flexbox;"
     ],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     id: 8,
-    question: "Как сделать тень у блока?",
+    question: "Как скруглить углы элемента?",
     options: [
-      "shadow: 5px 5px 10px gray;",
-      "box-shadow: 5px 5px 10px gray;",
-      "block-shadow: 5px 5px 10px gray;",
-      "element-shadow: 5px 5px 10px gray;"
+      "border-curve: 5px;",
+      "corner-radius: 5px;",
+      "border-radius: 5px;",
+      "round-corners: 5px;"
     ],
-    correctAnswer: 1
+    correctAnswer: 2
   },
   {
     id: 9,
     question: "Как сделать анимацию в CSS?",
     options: [
-      "@animation",
-      "@keyframes",
-      "@animate",
-      "@motion"
+      "animation: ...",
+      "move: ...",
+      "transition: ...",
+      "animate: ..."
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 10,
+    question: "Как применить стили только при наведении?",
+    options: [
+      ":onhover",
+      ":mouseover",
+      ":hover",
+      ":active"
+    ],
+    correctAnswer: 2
+  }
+];
+
+const questionsJsvsScript = [
+  {
+    id: 1,
+    question: "Как объявить переменную с блочной областью видимости?",
+    options: [
+      "var",
+      "let",
+      "const",
+      "variable"
     ],
     correctAnswer: 1
   },
   {
-    id: 10,
-    question: "Как выбрать все элементы &#8249;p&#8250; внутри &#8249;div&#8250;?",
+    id: 2,
+    question: "Как проверить тип переменной?",
     options: [
-      "div + p",
-      "div.p",
-      "div p",
-      "div &#8250; p"
+      "typeof",
+      "typeOf",
+      "getType",
+      "whatis"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 3,
+    question: "Как добавить элемент в конец массива?",
+    options: [
+      "arr.insertEnd()",
+      "arr.add()",
+      "arr.push()",
+      "arr.append()"
     ],
     correctAnswer: 2
   },
   {
-    id: 11,
-    question: "Как сделать градиентный фон?",
+    id: 4,
+    question: "Как создать новый объект?",
     options: [
-      "background: gradient(...);",
-      "background: linear-gradient(...);",
-      "background-color: gradient(...);",
-      "gradient: background(...);"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 12,
-    question: "Как изменить размер блока, включая padding и border в общую ширину?",
-    options: [
-      "box-model: border-box;",
-      "box-sizing: border-box;",
-      "size-mode: include-padding;",
-      "width: calc(100% + padding);"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 13,
-    question: "Как сделать адаптивный дизайн?",
-    options: [
-      "Использовать @media queries",
-      "Использовать responsive: true;",
-      "Использовать viewport units",
-      "Варианты 1 и 3 верны"
+      "new Object()",
+      "{}",
+      "Object.create()",
+      "Все варианты верны"
     ],
     correctAnswer: 3
   },
   {
-    id: 14,
-    question: "Как центрировать блок по горизонтали с margin?",
+    id: 5,
+    question: "Как выполнить функцию через 2 секунды?",
     options: [
-      "margin: center;",
-      "margin: 0 auto;",
-      "margin-auto: center;",
-      "center: margin;"
+      "setTimeout(func, 2000)",
+      "delay(func, 2000)",
+      "wait(func, 2000)",
+      "pause(2000, func)"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 6,
+    question: "Как проверить, является ли переменная массивом?",
+    options: [
+      "Array.isArray(var)",
+      "var.isArray()",
+      "typeof var === 'array'",
+      "var instanceof Array"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 7,
+    question: "Как объединить два массива?",
+    options: [
+      "arr1.concat(arr2)",
+      "arr1 + arr2",
+      "arr1.join(arr2)",
+      "arr1.merge(arr2)"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 8,
+    question: "Как отменить действие по умолчанию в событии?",
+    options: [
+      "event.stop()",
+      "event.preventDefault()",
+      "event.cancel()",
+      "event.halt()"
     ],
     correctAnswer: 1
   },
   {
-    id: 15,
-    question: "Как изменить порядок элементов в flex-контейнере?",
+    id: 9,
+    question: "Как создать промис?",
     options: [
-      "flex-order",
-      "order",
-      "flex-index",
-      "z-index"
+      "new Promise()",
+      "Promise.create()",
+      "promise()",
+      "new Async()"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 10,
+    question: "Как получить текущую дату?",
+    options: [
+      "Date.now()",
+      "new Date()",
+      "time.now()",
+      "getCurrentDate()"
     ],
     correctAnswer: 1
   }
 ];
+
+const quotes = [
+  {
+    text: "Я не бегаю за деньгами. Я иду к ним размеренным шагом, а они сами меня догоняют.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Если ты не уверен — притворись уверенным. Остальные сами начнут сомневаться.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Лучший способ избежать драки — выглядеть так, будто ты её уже выиграл.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Я не ношу часы. Время подстраивается под меня.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Если кто-то говорит, что я переигрываю — значит, он просто не видел моих тренировок.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Я не занимаюсь йогой. Йога занимается мной.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Мой стиль вождения? Представь, что все вокруг — каскадёры, и им за это платят.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Лучшая диета — это когда ты ешь всё, что хочешь, но так быстро, что калории не успевают усвоиться.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Я не хожу в спортзал. Спортзал приходит ко мне.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Если ты опоздал — скажи, что специально дал другим фору. Выглядит героически.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Я не смотрю фильмы ужасов. Я в них снимаюсь для разминки.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Мой секрет продуктивности? Делать вид, что у меня всего пять минут. Даже если это не так.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Если тебя не заметили — значит, ты недостаточно бритый.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Я не ношу оружие. Мои кулаки зарегистрированы как холодное и огнестрельное одновременно.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Лучший способ мотивировать команду — выглядеть так, будто ты и один всё сделаешь.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Я не ем фастфуд. Фастфуд ест меня… и потом жалеет об этом.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Если на переговорах стало тихо — не торопись заполнять паузу. Пусть другие нервничают.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Я не бегаю по утрам. Утро бегает за мной.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Если ты упал — вставай так, будто это был трюк. Зрители всё равно не поймут разницы.",
+    author: "Джейсон Стэтхэм"
+  },
+  {
+    text: "Настоящая роскошь — это когда ты можешь носить треники на красной дорожке, и это выглядит дороже смокинга.",
+    author: "Джейсон Стэтхэм"
+  }
+]
