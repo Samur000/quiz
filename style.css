@@ -158,7 +158,7 @@ h2 {
 
 .js {
     background-color: #f1c40f;
-    color: #2c3e50;
+    color: white;
     border: none;
 }
 
@@ -422,7 +422,97 @@ h2 {
     min-height: 44px;
     /* Минимальный размер для тач-элементов */
 }
+
 .option-touch {
-    transform: scale(0.98)!important;
-    opacity: 0.9!important;
+    transform: scale(0.98) !important;
+    opacity: 0.9 !important;
+}
+
+
+.quote-container {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border-left: 5px solid #3498db;
+    animation: fadeIn 1s ease-out;
+    transition: all 0.3s ease;
+}
+
+.quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #2c3e50;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    quotes: "“" "”" "‘" "’";
+}
+
+.quote:before {
+    content: open-quote;
+    font-size: 2rem;
+    color: #3498db;
+    line-height: 0;
+    vertical-align: -0.4em;
+}
+
+.quote:after {
+    content: close-quote;
+    font-size: 2rem;
+    color: #3498db;
+    line-height: 0;
+    vertical-align: -0.4em;
+}
+
+.quote-autor {
+    font-size: 1rem;
+    color: #7f8c8d;
+    font-weight: 600;
+    position: relative;
+    padding-top: 10px;
+}
+
+.quote-autor:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #3498db, transparent);
+}
+
+/* Адаптивные стили для цитат */
+@media (max-width: 768px) {
+    .quote-container {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .quote {
+        font-size: 1.1rem;
+    }
+
+    .quote-autor {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-container {
+        padding: 15px;
+        margin-top: 25px;
+        border-left-width: 3px;
+    }
+
+    .quote {
+        font-size: 1rem;
+    }
+
+    .quote-autor {
+        font-size: 0.9rem;
+    }
 }
